@@ -1,0 +1,241 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    margin: 0px auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font-size: 15px;
+}
+
+header, main, footer, nav, section, section article, header div,
+footer div, .mainHistory section div, #mainGames, #mainGames div,
+.puzzle div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    /* header */
+
+header {
+    flex-direction: column;
+}
+
+    /* nav */
+
+nav {
+    justify-content: space-between;
+    width: 100%;
+    height: 9vh;
+    background-color: rgb(24, 24, 41);
+    padding: 0px 50px;
+}
+
+nav button, main section article button, .reset {
+    width: 120px;
+    height: 40px;
+    margin: 0px 20px;
+    border-radius: 10px;
+    background-color: rgb(233, 233, 198);
+    box-shadow: 6px 6px 15px black;
+    cursor: pointer;
+}
+
+nav button a,
+main section article button a {
+    font-size: 1rem;
+    font-weight: 600;
+    color:rgb(0, 0, 0);
+    letter-spacing: 0.5px;
+}
+
+/*  div header */
+
+header > div {
+    width: 100%;
+    height: 50vh;
+    background-image: url(../assets/img/codigo.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header div h1 {
+    font-size: 60px;
+    color: white;
+    text-align: center;
+    text-shadow: 10px 0 10px black;
+}
+
+/* Index */
+
+main {
+    height: auto;
+    min-height: 100vh;
+    background-color: rgb(24, 24, 41);
+    flex-direction: column;
+}
+
+main h2 {
+    font-size: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 5px;
+    margin-bottom: 10%;
+    color: rgb(89, 127, 145);
+    text-shadow: 10px 0px 10px black;
+
+}
+
+main section {
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+main section article {
+    background-color: rgb(226, 209, 174);
+    width: 20%;
+    min-width: 300px;
+    height: 23vw;
+    min-height: 300px;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    border-radius: 0px 20px 0px 20px;
+    border: 3px solid black;
+}
+
+main section article img {
+    width: 90%;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+
+main section article button {
+    margin-bottom: 20px;
+    background-color: rgb(184, 184, 147);
+    box-shadow: none;
+}
+
+/* FOOTER */
+
+footer {
+    width: 100%;
+    height: 18vh;
+    justify-content: space-between;
+    padding: 0px 30px;
+}
+
+footer div {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 20%;
+    text-align: center;
+}
+
+footer img {
+    width: 100px;
+    margin-right: 50px;
+}
+
+footer h3 {
+    font-size: 15px;
+}
+
+footer p {
+    font-size: 25px;
+    margin-right: 100px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* HISTORIA */
+
+.mainHistory section div {
+    margin: 100px;
+    padding-top: 80px;
+}
+
+.mainHistory h3 {
+    color: rgb(20, 72, 75);
+    width: 30vw;
+    text-align: center;
+    font-size: 40px;
+}
+
+.mainHistory .h3size {
+    width: 30vw;
+}
+
+.mainHistory .pp {
+    width: 100vh;
+}
+
+.mainHistory p {
+    color: white;
+    width: 40vw;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.sectionVideo {
+    width: 100%;
+    flex-direction: column;
+    margin: 10vh;
+}
+
+#video {
+    width: auto;
+    height: auto;
+}
+
+.sectionVideo h3 {
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+/* JUEGO */
+
+
+#mainGames h2 {
+    padding-top: 100px;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+}
+
+#mainGames > div {
+    align-items: flex-start;
+    width: 100%;
+    height: 60vh;
+}
+
+#mainGames > div div {
+    width: 15%;
+    min-width: 200px;
+    text-align: center;
+    height: 500px;
+    margin: 3px;
+    color: rgb(255, 255, 255);
+    font-size: min(0.5vw + 0.7rem);
+}
+
+.puzzle div {
+    background-color: grey;
+}
+
+#mainGames > div img {
+    height: 500px;
+    width: 100%;
+}
+
+.reset {
+    width: 250px;
+    margin-bottom: 100px;
+}
